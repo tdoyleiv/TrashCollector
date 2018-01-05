@@ -70,31 +70,6 @@ namespace TrashCollector.Models
         public string Email { get; set; }
 
         [Required]
-        [Display(Name = "Street Number")]
-        public int StreetNumber { get; set; }
-
-        [Required]
-        [Display(Name = "Street Address")]
-        public string StreetAddress { get; set; }
-
-        [Display(Name = "APT/STE/BLDG #")]
-        public string AddressTwo { get; set; }
-
-        [Required]
-        [Display(Name = "City")]
-        public string City { get; set; }
-
-        [Required]
-        [StringLength(2, ErrorMessage = "The {0} must use the US Postal Abbreviation.")]
-        [Display(Name = "State")]
-        public string State { get; set; }
-
-        [Required]
-        [StringLength(5, ErrorMessage = "The {0} must be a valid US ZIP Code")]
-        [Display(Name = "ZIP Code")]
-        public int ZIP { get; set; }
-
-        [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
@@ -105,6 +80,7 @@ namespace TrashCollector.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
+        
 
     public class ResetPasswordViewModel
     {
