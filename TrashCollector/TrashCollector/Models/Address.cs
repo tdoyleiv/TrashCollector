@@ -9,6 +9,7 @@ namespace TrashCollector.Models
     public class Address
     {
         public int ID { get; set; }
+
         public int StreetNumber { get; set; }
         public string StreetAddress { get; set; }
         public string AddressTwo { get; set; }

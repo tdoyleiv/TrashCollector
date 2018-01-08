@@ -11,8 +11,8 @@ namespace TrashCollector.Controllers
 {
     public class RoleController : Controller
     {
-        // GET: Role
         [Authorize]
+        // GET: Role
         public ActionResult Index()
         {
             if (User.Identity.IsAuthenticated)

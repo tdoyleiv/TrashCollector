@@ -10,7 +10,7 @@ using TrashCollector.Models;
 namespace TrashCollector.Controllers
 {
     public class UsersController : Controller
-    {
+    { 
         [Authorize]
         // GET: Users
         public ActionResult Index()
