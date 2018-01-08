@@ -26,7 +26,7 @@ namespace TrashCollector
                 role.Name = "Admin";
                 RoleManager.Create(role);
                 var user = new ApplicationUser();
-                user.UserName = "tfdoyleiv@gmail.com";
+                user.UserName = "tfdoyleiv";
                 user.Email = "tfdoyleiv@gmail.com";
                 string userPWD = "#3artBroken";
                 var checkUser = UserManager.Create(user, userPWD);
@@ -39,6 +39,12 @@ namespace TrashCollector
             {
                 var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
                 role.Name = "Employee";
+                RoleManager.Create(role);
+            }
+            if (!RoleManager.RoleExists("Client"))
+            {
+                var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
+                role.Name = "Client";
                 RoleManager.Create(role);
             }
         }
