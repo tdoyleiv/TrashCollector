@@ -1,0 +1,31 @@
+﻿
+@model GarbageCollector.Models.Schedule
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Your pickup schedule</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.CheckBoxFor(m => m.isPickupMonday) Monday
+        </th>
+        <th>
+            @Html.CheckBoxFor(m => m.isPickupTuesday) Tuesday
+        </th>
+        <th>
+            @Html.CheckBoxFor(m => m.isPickupWednesday) Wednesday
+        </th>
+        <th>
+            @Html.CheckBoxFor(m => m.isPickupThursday) Thursday
+        </th>
+        <th>
+            @Html.CheckBoxFor(m => m.isPickupFriday) Friday
+        </th>
+        <th>
+            @Html.CheckBoxFor(m => m.isPickupSaturday) Saturday
+        </th>
+        <th></th>
+    </tr>
+</table>
+<p>Select each day you would like a garbage pickup. To suspend pickups for any period of time, simply deselect the requisite boxes.</p>
