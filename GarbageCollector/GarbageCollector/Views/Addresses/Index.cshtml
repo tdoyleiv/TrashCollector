@@ -9,6 +9,11 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+@using (Html.BeginForm("Index", "Addresses", FormMethod.Get)) { 
+    <p> Search by ZIP Code: @Html.TextBox("SearchString")<br />
+    <input type="submit" value="Filter" />
+    </p>
+}
 <table class="table">
     <tr>
         <th>
@@ -59,5 +64,7 @@
         </td>
     </tr>
 }
-
 </table>
+<div>
+    @Html.ActionLink("Back to Account Manager", "Index", "Manage")
+</div>

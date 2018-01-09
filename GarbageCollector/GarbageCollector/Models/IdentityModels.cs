@@ -31,5 +31,7 @@ namespace GarbageCollector.Models
         }
 
         public System.Data.Entity.DbSet<GarbageCollector.Models.Address> Addresses { get; set; }
+
+        public System.Data.Entity.DbSet<GarbageCollector.Models.Schedule> Schedules { get; set; }
     }
 }

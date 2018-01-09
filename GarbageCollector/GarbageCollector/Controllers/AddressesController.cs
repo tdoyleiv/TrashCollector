@@ -15,9 +15,14 @@ namespace GarbageCollector.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Addresses
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.Addresses.ToList());
+            var addresses = from item in db.Addresses select item;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                addresses = addresses.Where(s => s.ZIP.Contains(searchString));
+            }
+            return View(addresses);
         }
 
         // GET: Addresses/Details/5

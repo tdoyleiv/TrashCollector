@@ -13,7 +13,15 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.jumbotron {
+    background-image:url(20171206_193446.jpg);
+    background-size:1150px 850px; 
+    background-repeat:no-repeat;
+	background-attachment: inherit; 
+    background-position: top;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
