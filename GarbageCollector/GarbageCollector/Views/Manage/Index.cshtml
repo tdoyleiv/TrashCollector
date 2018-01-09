@@ -5,7 +5,7 @@
 <h2>@ViewBag.Title.</h2>
 
 <p class="text-success">@ViewBag.StatusMessage</p>
-<h4>Your account overview.<br /><br />Each pickup costs $25 per diem.</h4>
+<h4>Your account overview.<br /><br />Unlimited, customizable trash pickups - only $50 per mensem.</h4>
 <hr />
 <dl class="dl-horizontal">
     <dt>Password:</dt>
@@ -31,7 +31,11 @@
     </dd>
     <dt>My Bill:</dt>
     <dd>
-        [ @Html.ActionLink("Pay/View your bill", "Index", "Bill", new { id = "" }, null) ]
+        [ @Html.ActionLink("Pay/View your bill", "Index", "Bills", new { id = "" }, null) ]
     </dd>
 
 </dl>
+<br />
+<br />
+<br />
+<br />

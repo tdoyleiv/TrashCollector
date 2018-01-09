@@ -7,13 +7,13 @@ namespace GarbageCollector.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class removeschedule : IMigrationMetadata
+    public sealed partial class updatedatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(removeschedule));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updatedatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "201801091555328_remove schedule"; }
+            get { return "201801092255030_update-database"; }
         }
         
         string IMigrationMetadata.Source
